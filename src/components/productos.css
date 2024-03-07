@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;900&display=swap");
+
+:root {
+  --currencyPrefix: "€";
+  --negro: #1d1d1d;
+  --blanco: #fff;
+  --primario: #a5cc43;
+}
+
+body {
+  overflow-x: hidden;
+  color: #050505;
+  left: 0;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  transition: ease all 0.3s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contenedorCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 300px;
+  transition: ease all 0.3s;
+}
+
+.card:hover {
+  transform: scale(
+    1.05
+  ); /* Ajusta este valor según lo grande que quieras que sea el efecto de zoom */
+  transition: transform 0.3s ease-in-out; /* Asegura una transición suave */
+}
+
+.card .wrapper {
+  margin: 60px 10px 10px 10px;
+  padding-top: 300px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 0 20px 10px rgba(29, 29, 29, 0.1);
+  transition: ease all 0.3s;
+  border-radius: 20px;
+}
+
+.card .wrapper:hover .imgProd {
+  height: 350px;
+}
+
+.card .wrapper .colorProd {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: var(--primario);
+}
+
+.card .wrapper .imgProd {
+  position: absolute;
+  bottom: calc(100% - 300px);
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: ease all 0.3s;
+}
+
+.Lechuga {
+  background-image: url("../assets/ejemplo_producto.png");
+}
+
+.Tomate {
+  background-image: url("../assets/tomate.png");
+}
+
+.Naranja {
+  background-image: url("../assets/naranjas.png");
+}
+
+.Platano {
+  background-image: url("../assets/platano.png");
+}
+
+
+.card .wrapper .infoProd {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card .wrapper .infoProd p {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card .wrapper .infoProd .nombreProd {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.card .wrapper .infoProd .extraInfo {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.extraInfo {
+  margin-bottom: -30px;
+}
+
+.infoNutricional {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 15px; /* o el espaciado que prefieras */
+}
+
+.nutricionalItem {
+  font-weight: 600; /* para negritas en los números */
+  color: var(--negro);
+}
+
+.nutricionalLabel {
+  font-weight: 400; /* para un peso normal en las etiquetas */
+  color: var(--negro);
+  display: block; /* para que las etiquetas vayan debajo de los números */
+  font-size: 0.8em; /* ajusta al tamaño que prefieras */
+}
+
+.card .wrapper .infoProd .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo {
+  flex-grow: 1;
+  position: relative;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio {
+  font-family: "Roboto", sans-serif;
+  color: var(--negro);
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio.precioOferta {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  color: red;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+  content: var(--currencyPrefix);
+  font-size: 20px;
+}
+
+.card .wrapper .infoProd .actions .action {
+  display: flex;
+  margin-left: 15px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all 0.3s;
+  color: var(--negro);
+}
+
+.card .wrapper .infoProd .actions .action svg {
+  position: absolute;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all 0.3s;
+}
+
+.card .wrapper .infoProd .actions .action svg path,
+.card .wrapper .infoProd .actions .action svg circle {
+  stroke: currentColor;
+  fill: transparent;
+  transition: ease all 0.3s;
+}
+
+.card .wrapper .infoProd .actions .action.aFavs {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  color: var(--blanco);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedorCards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%; /* Ajusta al porcentaje deseado para que ocupe más espacio en pantalla */
+    margin: 10px auto; /* Centra las tarjetas verticalmente y añade un pequeño margen */
+  }
+
+  .card .wrapper {
+    margin: 20px 10px; /* Reduce el margen para dispositivos móviles */
+  }
+
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: smaller; /* Ajusta el tamaño de la fuente */
+  }
+  /* Aumentar el tamaño de la letra */
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: 20px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .card .wrapper .infoProd .nutricionalItem,
+  .card .wrapper .infoProd .nutricionalLabel {
+    font-size: 16px; /* Ajusta el tamaño de la fuente para los elementos nutricionales */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio {
+    font-size: 28px; /* Aumenta el tamaño para el precio */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+    font-size: 22px; /* Aumenta el tamaño del prefijo de moneda */
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card .wrapper .imgProd {
+    bottom: calc(
+      100% - 300px
+    ); /* Ajusta la posición de la imagen hacia arriba */
+    height: 250px; /* Ajusta si es necesario para mantener la proporción */
+  }
+
+  .contenedorCards {
+    justify-content: space-around; /* Ajusta la distribución de las tarjetas para que llenen el espacio horizontalmente */
+  }
+
+  .card {
+    width: 45%; /* Ajusta para mostrar dos tarjetas en línea en tabletas */
+  }
+
+  /* Aumentar el tamaño de la letra */
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: 30px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .card .wrapper .infoProd .nutricionalItem,
+  .card .wrapper .infoProd .nutricionalLabel {
+    font-size: 16px; /* Ajusta el tamaño de la fuente para los elementos nutricionales */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio {
+    font-size: 28px; /* Aumenta el tamaño para el precio */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+    font-size: 22px; /* Aumenta el tamaño del prefijo de moneda */
+  }
+}
+
+.comprarya input[type='button'] {
+  border-radius: 10px;
+  background-color: #a5cc43;
+  font-weight: 600;
+  color: #f2f2f2;
+  padding: 10px;
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}

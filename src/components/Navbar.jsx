@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logoEmp from "../assets/logov1.png";
-import imagenCarrito from '../assets/Carrito.JPG';
+import imagenCarrito from '../assets/carrito.jpg';
 
 
 

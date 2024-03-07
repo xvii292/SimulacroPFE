@@ -1,74 +1,106 @@
 /* Estilos para la barra de navegación (navbar) */
+@font-face {
+  font-family: 'RanchoFuente';
+  /* Nombre de la fuente */
+  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
+  /* Ruta relativa al archivo TTF */
+  /* Otros formatos de archivo si los tienes */
+  font-weight: normal;
+  /* Puedes ajustar esto según la fuente */
+  font-style: normal;
+  /* Puedes ajustar esto según la fuente */
+}
 
 
 .navbar {
-    background-color: #387423;
-    padding:35px 0;
-    text-align: center;
-    position: fixed; /* Fija la barra de navegación en la parte superior */
-    top: 0; /* Coloca la barra de navegación en la parte superior */
-    width: 100%; /* Ancho completo */
-    z-index: 999; /* Asegura que esté en la parte superior */
-    margin-top: -25px;
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: space-between;
-    height: 100px;
-    
-    
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-right: 50px;
-    margin-top: 10px;
-  }
-  
-  .navbar li {
-    margin: 0 5px; /* Ajusta la separación entre elementos li según tus necesidades */
-    display: inline;
-    margin-right: 25px;
-  }
-  
-  
-  
-  
+  font-family: 'RanchoFuente' !important;
+  background-color: #387423;
+  padding: 35px 0;
+  text-align: center;
+  position: fixed;
+  /* Fija la barra de navegación en la parte superior */
+  top: 0;
+  /* Coloca la barra de navegación en la parte superior */
+  width: 100%;
+  /* Ancho completo */
+  z-index: 999;
+  /* Asegura que esté en la parte superior */
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  justify-content: space-between;
+  height: 100px;
+
+
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.navbar li {
+  margin: 0 5px;
+  /* Ajusta la separación entre elementos li según tus necesidades */
+  display: inline;
+  margin-right: 25px;
+}
+
+
+
+
 /* Estilos para los enlaces en la barra de navegación */
 .navbar ul li a {
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  font-size: 42px; /* Tamaño del texto de los enlaces */
-  font-weight: bold; /* Texto en negrita */
-  margin: 0 10px; /* Espacio entre los enlaces */
-  font-family: "Rancho", cursive;
-  position: relative; /* Añade posición relativa para el efecto de subrayado */
-  color: rgb(255, 255, 255); /* Color del texto de los enlaces */
+  text-decoration: none;
+  /* Quita el subrayado de los enlaces */
+  font-size: 42px;
+  /* Tamaño del texto de los enlaces */
+  font-weight: bold;
+  /* Texto en negrita */
+  margin: 0 10px;
+  /* Espacio entre los enlaces */
+  font-family: 'RanchoFuente', cursive;
+  position: relative;
+  /* Añade posición relativa para el efecto de subrayado */
+  color: rgb(255, 255, 255);
+  /* Color del texto de los enlaces */
 }
 
 .navbar ul li a::after {
-  content: ''; /* Crea un elemento pseudo ::after para el efecto de subrayado */
+  content: '';
+  /* Crea un elemento pseudo ::after para el efecto de subrayado */
   display: block;
   position: absolute;
-  bottom: -3px; /* Ajusta la posición del subrayado según tus necesidades */
+  bottom: -3px;
+  /* Ajusta la posición del subrayado según tus necesidades */
   left: 0;
-  width: 0; /* Ancho inicial del subrayado */
-  height: 2px; /* Grosor del subrayado */
-  background-color: transparent; /* Color inicial del subrayado */
-  transition: width 0.3s, background-color 0.3s; /* Transición de ancho y color al pasar el mouse */
+  width: 0;
+  /* Ancho inicial del subrayado */
+  height: 2px;
+  /* Grosor del subrayado */
+  background-color: transparent;
+  /* Color inicial del subrayado */
+  transition: width 0.3s, background-color 0.3s;
+  /* Transición de ancho y color al pasar el mouse */
 }
 
 .navbar ul li a:hover::after {
-  width: 100%; /* Ancho completo al pasar el mouse */
-  background-color: #ffffff; /* Cambia el color del subrayado al pasar el mouse */
+  width: 100%;
+  /* Ancho completo al pasar el mouse */
+  background-color: #ffffff;
+  /* Cambia el color del subrayado al pasar el mouse */
 }
 
-  .footer-logo {
-    width: 150px;
-    margin-top: 30px;
-    margin-left: 100px;
-  }
+.footer-logo {
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
 
   .carrito-imagen {
     width: 70px;  /* Ajusta el tamaño según tus necesidades */
@@ -77,3 +109,13 @@
     cursor: pointer;  /* Cambia el cursor al pasar el ratón para indicar que es interactivo */
     margin-top: 10px;
   }
+.carrito-imagen {
+  width: 100px;
+  /* Ajusta el tamaño según tus necesidades */
+  height: 70px;
+  margin-left: 10px;
+  /* Ajusta el margen según tus necesidades */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón para indicar que es interactivo */
+  margin-top: 10px;
+}
