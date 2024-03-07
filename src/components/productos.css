@@ -1,206 +1,318 @@
-@font-face {
-    font-family: 'RanchoFuente';
-    /* Nombre de la fuente */
-    src: url('../fonts/Rancho-Regular.ttf') format('truetype');
-    /* Ruta relativa al archivo TTF */
-    /* Otros formatos de archivo si los tienes */
-    font-weight: normal;
-    /* Puedes ajustar esto según la fuente */
-    font-style: normal;
-    /* Puedes ajustar esto según la fuente */
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;900&display=swap");
 
-.Productos {
-  display: inline;
-  font-family: 'RanchoFuente', cursive !important;
-  justify-content: center;
+:root {
+  --currencyPrefix: "€";
+  --negro: #1d1d1d;
+  --blanco: #fff;
+  --primario: #a5cc43;
+}
+
+body {
+  overflow-x: hidden;
+  color: #050505;
+  left: 0;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  transition: ease all 0.3s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contenedorCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   min-height: 100vh;
-  background: #131313;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
-/*para centrar y poner en linea */
-.container {
-  position: relative;
-  display: inline-block;
-  margin: 0 20px;
+.card {
+  width: 300px;
+  transition: ease all 0.3s;
 }
 
-.container .card {
+.card:hover {
+  transform: scale(
+    1.05
+  ); /* Ajusta este valor según lo grande que quieras que sea el efecto de zoom */
+  transition: transform 0.3s ease-in-out; /* Asegura una transición suave */
+}
+
+.card .wrapper {
+  margin: 60px 10px 10px 10px;
+  padding-top: 300px;
+  box-sizing: border-box;
   position: relative;
-  width: 320px;
-  height: 450px;
-  background: #232323;
+  box-shadow: 0 0 20px 10px rgba(29, 29, 29, 0.1);
+  transition: ease all 0.3s;
   border-radius: 20px;
-  overflow: hidden;
 }
 
-.container .card:before {
-  content: '';
+.card .wrapper:hover .imgProd {
+  height: 350px;
+}
+
+.card .wrapper .colorProd {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #9BDC28;
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
+  height: 200px;
+  background-color: var(--primario);
 }
 
-.container .card:hover:before {
-  clip-path: circle(300px at 80% -20%);
-}
-
-.container .card:after {
+.card .wrapper .imgProd {
   position: absolute;
-  top: 30%;
-  left: -20%;
-  font-size: 12em;
-  font-weight: 800;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.04);
-}
-
-.container .card .imgBx {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10000;
+  bottom: calc(100% - 300px);
   width: 100%;
-  height: 220px;
-  transition: 0.5s;
+  height: 300px;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: ease all 0.3s;
 }
 
-.container .card:hover .imgBx{
-  top: 0;
-  transform: translateY(0%);
+.Lechuga {
+  background-image: url("../assets/ejemplo_producto.png");
 }
 
-.container .card .imgBx img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  width: 270px;
+.Tomate {
+  background-image: url("../assets/tomate.png");
 }
 
-.container .card .contentBx {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  transition: 1s;
-  z-index: 10;
+.Naranja {
+  background-image: url("../assets/naranjas.png");
 }
 
-.container .card:hover .contentBx {
-  height: 210px;
+.Platano {
+  background-image: url("../assets/platano.png");
 }
 
-.container .card .contentBx h2 {
-  position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #FFFFFF;
-}
 
-.container .card .contentBx .size, 
-.container .card .contentBx .color {
+.card .wrapper .infoProd {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 20px;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
+  flex-direction: column;
+  height: 170px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.container .card:hover .contentBx .size {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.container .card:hover .contentBx .color {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.6s;
-}
-
-.container .card .contentBx .size h3, 
-.container .card .contentBx .color h3 {
-  color: #FFFFFF;
-  font-weight: 300;
+.card .wrapper .infoProd p {
+  width: 100%;
   font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: 10px;
-}
-
-.container .card .contentBx .size span {
-  width: 26px;
-  height: 26px;
   text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  display: inline-block;
-  color: #111111;
-  background: #FFFFFF;
-  margin: 0 5px;
-  transition: 0.5s;
-  color: #111111;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.container .card .contentBx .size span:hover {
-  background: #9BDC28;
-}
-
-.container .card .contentBx .color span {
-  width: 20px;
-  height: 20px;
-  background: #FF0;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.container .card .contentBx .color span:nth-child(2) {
-  background: #9BDC28;
-}
-
-.container .card .contentBx .color span:nth-child(3) {
-  background: #03A9F4;
-}
-
-.container .card .contentBx .color span:nth-child(4) {
-  background: #E91E63;
-}
-
-.container .card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
+.card .wrapper .infoProd .nombreProd {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 600;
-  color: #111111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
-.container .card:hover .contentBx a {
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.75s;
+.card .wrapper .infoProd .extraInfo {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
+.extraInfo {
+  margin-bottom: -30px;
+}
 
+.infoNutricional {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 15px; /* o el espaciado que prefieras */
+}
 
-.image {
-  width: 300px;
+.nutricionalItem {
+  font-weight: 600; /* para negritas en los números */
+  color: var(--negro);
+}
+
+.nutricionalLabel {
+  font-weight: 400; /* para un peso normal en las etiquetas */
+  color: var(--negro);
+  display: block; /* para que las etiquetas vayan debajo de los números */
+  font-size: 0.8em; /* ajusta al tamaño que prefieras */
+}
+
+.card .wrapper .infoProd .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo {
+  flex-grow: 1;
+  position: relative;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio {
+  font-family: "Roboto", sans-serif;
+  color: var(--negro);
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio.precioOferta {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  color: red;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+  content: var(--currencyPrefix);
+  font-size: 20px;
+}
+
+.card .wrapper .infoProd .actions .action {
+  display: flex;
+  margin-left: 15px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all 0.3s;
+  cursor: pointer;
+  color: var(--negro);
+}
+
+.card .wrapper .infoProd .actions .action svg {
+  position: absolute;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) all 0.3s;
+}
+
+.card .wrapper .infoProd .actions .action svg path,
+.card .wrapper .infoProd .actions .action svg circle {
+  stroke: currentColor;
+  fill: transparent;
+  transition: ease all 0.3s;
+}
+
+.card .wrapper .infoProd .actions .action.aFavs {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  color: var(--blanco);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedorCards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%; /* Ajusta al porcentaje deseado para que ocupe más espacio en pantalla */
+    margin: 10px auto; /* Centra las tarjetas verticalmente y añade un pequeño margen */
+  }
+
+  .card .wrapper {
+    margin: 20px 10px; /* Reduce el margen para dispositivos móviles */
+  }
+
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: smaller; /* Ajusta el tamaño de la fuente */
+  }
+  /* Aumentar el tamaño de la letra */
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: 20px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .card .wrapper .infoProd .nutricionalItem,
+  .card .wrapper .infoProd .nutricionalLabel {
+    font-size: 16px; /* Ajusta el tamaño de la fuente para los elementos nutricionales */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio {
+    font-size: 28px; /* Aumenta el tamaño para el precio */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+    font-size: 22px; /* Aumenta el tamaño del prefijo de moneda */
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card .wrapper .imgProd {
+    bottom: calc(
+      100% - 300px
+    ); /* Ajusta la posición de la imagen hacia arriba */
+    height: 250px; /* Ajusta si es necesario para mantener la proporción */
+  }
+
+  .contenedorCards {
+    justify-content: space-around; /* Ajusta la distribución de las tarjetas para que llenen el espacio horizontalmente */
+  }
+
+  .card {
+    width: 45%; /* Ajusta para mostrar dos tarjetas en línea en tabletas */
+  }
+
+  /* Aumentar el tamaño de la letra */
+  .card .wrapper .infoProd p,
+  .card .wrapper .infoProd .nombreProd {
+    font-size: 30px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .card .wrapper .infoProd .nutricionalItem,
+  .card .wrapper .infoProd .nutricionalLabel {
+    font-size: 16px; /* Ajusta el tamaño de la fuente para los elementos nutricionales */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio {
+    font-size: 28px; /* Aumenta el tamaño para el precio */
+  }
+
+  .card .wrapper .infoProd .actions .preciosGrupo .precio:before {
+    font-size: 22px; /* Aumenta el tamaño del prefijo de moneda */
+  }
 }
