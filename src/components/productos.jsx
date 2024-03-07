@@ -4,10 +4,10 @@ import './productos.css';
 const Productos = () => {
   // La estructura inicial de las tarjetas, incluyendo propiedades para enCarrito y esFav
   const [cards] = useState([
-    { nombre: 'Tomate Pera (950g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 1.99, oferta: 2.99, claseImg: 'Tomate' },
+    { nombre: 'TOMATE PERA (950g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 1.99, oferta: 2.99, claseImg: 'Tomate' },
     { nombre: 'LECHUGA ROMANA (250g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 2.99, color: '#a5cc43', claseImg: 'Lechuga' },
-    { nombre: 'Naranjas (1050g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 2.99, color: '#a5cc43', claseImg: 'Naranja' },
-    { nombre: 'Plátano (250g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 2.99, color: '#a5cc43', claseImg: 'Platano' },
+    { nombre: 'NARANJAS (1050g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 2.99, color: '#a5cc43', claseImg: 'Naranja' },
+    { nombre: 'PLÁTANO (250g)', calorías: 670, proteínas: '49g', carbohidratos: '37g', grasas: '34g', precio: 2.99, color: '#a5cc43', claseImg: 'Platano' },
   ]);
 
   return (
@@ -47,7 +47,7 @@ const Productos = () => {
                   {/* Icono de carrito, asegúrate de tener SVG o un componente Icon aquí */}
                 </div>
                 <div className='comprarya'>
-                  <input type='button' value={"Comprar ya"}/>
+                  <input type='button' value={"COMPRAR YA"}/>
                 </div>
               </div>
             </div>

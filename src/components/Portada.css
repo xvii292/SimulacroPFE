@@ -39,8 +39,8 @@
     margin-bottom: 10px;
     font-family: 'RanchoFuente', cursive;
     color:#387423;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */     
-    filter: drop-shadow(2px 2px 2px black); 
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4); /* Sombra del texto */     
+    filter: drop-shadow(3px 3px 3px black); 
     
   }
   
@@ -49,6 +49,8 @@
     margin-top: -20px;
     font-family: 'RanchoFuente', cursive;
     color: #387423;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra del texto */     
+    filter: drop-shadow(1px 1px 1px black); 
   }
   
   button {
@@ -59,9 +61,9 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'Rancho', cursive;
+    font-family: 'RanchoFuente', cursive;
     border-radius: 30px;
-    margin-top: -20px;
+    margin-top: 6%;
   }
   
   button:hover {
