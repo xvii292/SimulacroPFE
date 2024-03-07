@@ -1,0 +1,60 @@
+/* Portada.css */
+
+.portada {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.40; /* Ajusta la opacidad de la imagen de fondo */
+  }
+  
+  .contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+    margin-top: 40px;
+  }
+  
+  h1 {
+    font-size: 5.0em;
+    margin-bottom: 10px;
+    font-family: 'Rancho', cursive;
+    color:#387423;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */     
+    filter: drop-shadow(2px 2px 2px black); 
+    
+  }
+  
+  p {
+    font-size: 2.5em;
+    margin-top: -20px;
+    font-family: 'Rancho', cursive;
+    color: #387423;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #387423;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Rancho', cursive;
+    border-radius: 30px;
+    margin-top: -20px;
+  }
+  
+  button:hover {
+    background-color: #387423; /* Cambia el color del botón al pasar el mouse */
+  }
+  

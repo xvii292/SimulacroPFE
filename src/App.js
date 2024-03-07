@@ -1,8 +1,9 @@
 import './App.css';
+import Navbar from './components/Navbar';
 import PiedePagina from './components/footer';
+import Portada from './components/Portada';
 import Productos from './components/productos';
 import Instalaciones from './components/instalacion';
-import Navbar from './components/Navbar';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
+        <Portada/>
       </header>
       <main>
 

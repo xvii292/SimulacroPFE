@@ -102,6 +102,13 @@
   margin-left: 100px;
 }
 
+  .carrito-imagen {
+    width: 70px;  /* Ajusta el tamaño según tus necesidades */
+    height: 50px;
+    margin-left: 10px; /* Ajusta el margen según tus necesidades */
+    cursor: pointer;  /* Cambia el cursor al pasar el ratón para indicar que es interactivo */
+    margin-top: 10px;
+  }
 .carrito-imagen {
   width: 100px;
   /* Ajusta el tamaño según tus necesidades */
