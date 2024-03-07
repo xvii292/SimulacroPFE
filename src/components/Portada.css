@@ -1,4 +1,14 @@
-/* Portada.css */
+@font-face {
+  font-family: 'RanchoFuente';
+  /* Nombre de la fuente */
+  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
+  /* Ruta relativa al archivo TTF */
+  /* Otros formatos de archivo si los tienes */
+  font-weight: normal;
+  /* Puedes ajustar esto según la fuente */
+  font-style: normal;
+  /* Puedes ajustar esto según la fuente */
+}
 
 .portada {
     position: relative;
@@ -27,7 +37,7 @@
   h1 {
     font-size: 5.0em;
     margin-bottom: 10px;
-    font-family: 'Rancho', cursive;
+    font-family: 'RanchoFuente', cursive;
     color:#387423;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */     
     filter: drop-shadow(2px 2px 2px black); 
@@ -37,7 +47,7 @@
   p {
     font-size: 2.5em;
     margin-top: -20px;
-    font-family: 'Rancho', cursive;
+    font-family: 'RanchoFuente', cursive;
     color: #387423;
   }
   
