@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import PiedePagina from './components/footer';
 import Portada from './components/Portada';
 import Productos from './components/productos';
-import Instalaciones from './components/instalacion';
 import CookieBanner from './components/CookieBanner';
 import PasosVenta from './components/PasosVenta';
+import CarruselImagenes from './components/CarruselImagenes';
 
 
 function App() {
@@ -17,9 +17,10 @@ function App() {
         <CookieBanner />
       </header>
       <main>
-        <PasosVenta />
         <Productos />
-        <Instalaciones />
+        <PasosVenta />
+        <h2 id="instalaciones">Nuestras Instalaciones</h2>
+        <CarruselImagenes/>
 
       </main>
 
