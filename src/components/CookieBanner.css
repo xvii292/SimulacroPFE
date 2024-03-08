@@ -38,9 +38,11 @@
   }
   
   .cookie-banner button:hover {
-     background-color: #ccc;
+     background-color: #ffffff;
+     color: #387423;
   }
 
   .cookie-banner a:hover {
-    color: #ccc;
+    color: #387423;
+    transition: color 0.3s ease;
  }
