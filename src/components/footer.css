@@ -24,7 +24,18 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
+  .footer-section img {
+    max-width: 250px;
+    margin-left: -3%;
+  }
+
   .footer-section h4 {
     margin: 0 0 10px 0;
     font-size: 22px;
