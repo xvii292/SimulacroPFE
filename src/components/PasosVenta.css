@@ -8,7 +8,7 @@
   .step {
     position: relative;
     text-align: center;
-    background-color: #dcdcdc; /* Gris más oscuro para cada paso */
+    background-color: #cae97b; /* Gris más oscuro para cada paso */
     padding: 40px;
     border-radius: 20%; /* Forma circular detrás de cada paso */
   }
@@ -47,6 +47,6 @@
   
   .step:hover::before {
       width: calc(70%);
-      height: calc(55%);
+      height: calc(50%);
   }
   
