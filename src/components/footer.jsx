@@ -31,7 +31,8 @@ const Pie = () => {
             <li>Consultoría de cultivo</li>
             <li>Aviso legal</li>
             <li>Política de Privacidad</li>
-            <a href={txt} target="_blank" onClick={openTxtInNewWindow}>Política de Cookies</a>
+            <a href={txt} target="_blank" rel="noreferrer" onClick={openTxtInNewWindow}>Política de Cookies</a>
+
           </ul>
         </div>
         <div class="footer-section">

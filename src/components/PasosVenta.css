@@ -1,0 +1,52 @@
+.shipping-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas */
+    gap: 30px; /* Espacio entre las imágenes */
+    padding: 90px;
+  }
+  
+  .step {
+    position: relative;
+    text-align: center;
+    background-color: #dcdcdc; /* Gris más oscuro para cada paso */
+    padding: 40px;
+    border-radius: 20%; /* Forma circular detrás de cada paso */
+  }
+  
+  .step img {
+    position: relative;
+    max-width: 60%; /* Hace que la imagen sea responsiva */
+    padding: 10%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  .Tit{
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  .step p {
+    margin-top: 5%;
+  }
+  
+  .step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 0;
+    height: 0;
+    background-color: #a5cc43;
+    border-radius: 60%;
+    transition: width 0.8s, height 0.8s;
+  }
+  
+  .step:hover::before {
+      width: calc(70%);
+      height: calc(55%);
+  }
+  
