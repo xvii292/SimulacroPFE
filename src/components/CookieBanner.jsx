@@ -34,9 +34,8 @@ const CookieBanner = () => {
       <label>
         <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas nuestro uso de cookies.</p>
       </label>
-      <label>
-        <a href={txt} target="_blank" onClick={openTxtInNewWindow}>Leer nuestra Política de Cookies</a> <button onClick={acceptCookies}>Aceptar Cookies</button>
-      </label>
+        <a href={txt} target="_blank" onClick={openTxtInNewWindow}>Leer nuestra Política de Cookies</a> 
+        <button onClick={acceptCookies}>Aceptar Cookies</button>
     </div>
   );
 };
