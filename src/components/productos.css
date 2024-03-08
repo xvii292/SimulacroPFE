@@ -164,6 +164,7 @@ li {
 .nutricionalItem {
   font-weight: 600; /* para negritas en los números */
   color: var(--negro);
+  margin-top: 1px;
 }
 
 .nutricionalLabel {
