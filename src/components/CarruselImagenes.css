@@ -105,19 +105,6 @@
 
 /* TuArchivoDeEstilos.css */
 
-#instalaciones {
-  color: #387423;
-  /* Cambia el color del texto según tus preferencias */
-  font-size: 68px;
-  /* Ajusta el tamaño de la fuente según tus preferencias */
-  font-weight: bold;
-  /* Puedes ajustar el peso de la fuente (normal, bold, etc.) */
-  margin-bottom: 40px;
-  /* Añade un margen en la parte inferior para separar de otros elementos */
-  font-family: 'RanchoFuente';
-  text-align: center;
-}
-
 .carrusel-container {
   margin-top: 440px !important;
 }
