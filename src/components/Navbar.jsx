@@ -36,7 +36,7 @@ const Navbar = () => {
           <a className="nav-link" href="#empleados" onClick={toggleMenu}>Productos</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#empleados" onClick={toggleMenu}>Instalaciones</a>
+          <a className="nav-link" href="#empleados" onClick={toggleMenu}>Sobre Nosotros</a>
         </li>
        
         {/* Agrega más elementos del menú según sea necesario */}

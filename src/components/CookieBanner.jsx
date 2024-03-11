@@ -11,12 +11,17 @@ const CookieBanner = () => {
     // Aquí puedes agregar la lógica para guardar la preferencia del usuario en el almacenamiento local o en una cookie
   };
 
+  const rejectCookies = () => {
+    // Aquí puedes agregar la lógica para rechazar las cookies
+    // Por ejemplo, podrías establecer un estado o limpiar las preferencias de cookies guardadas
+  };
+
   useEffect(() => {
     setShowBanner(true);
   }, []);
 
   const openTxtInNewWindow = () => {
-    fetch({txt})
+    fetch(txt)
       .then(response => response.text())
       .then(text => {
         const newWindow = window.open();
@@ -34,8 +39,9 @@ const CookieBanner = () => {
       <label>
         <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas nuestro uso de cookies.</p>
       </label>
-        <a href={txt} target="_blank" rel="noreferrer" onClick={openTxtInNewWindow}>Leer nuestra Política de Cookies</a> 
-        <button onClick={acceptCookies}>Aceptar Cookies</button>
+      <a href={txt} target="_blank" rel="noreferrer" onClick={openTxtInNewWindow}>Leer nuestra Política de Cookies</a> 
+      <button onClick={rejectCookies} className="reject-button">Rechazar Cookies</button>
+      <button onClick={acceptCookies}>Aceptar Cookies</button>
     </div>
   );
 };

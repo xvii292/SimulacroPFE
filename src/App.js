@@ -43,18 +43,22 @@ function App() {
               <CookieBanner />
             </header>
             <main>
-              <h2 className="ProductosTit">Productos</h2>
+              <div class="centered-container">
+                <h2 className="ProductosTit">Productos</h2>
+              </div>
               <Productos />
               <PasosVenta />
-              <h2 className="instalacionesTit">Nuestras Instalaciones</h2>
+              <div class="centered-container">
+                <h2 className="instalacionesTit">Nuestras Instalaciones</h2>
+              </div>
               <CarruselImagenes />
 
             </main>
 
             <PiedePagina />
-          </div>
+          </div >
       }
-    </div>
+    </div >
   );
 }
 

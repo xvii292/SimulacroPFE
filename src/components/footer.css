@@ -1,21 +1,7 @@
-/* Estilos para la barra de navegación (navbar) */
-@font-face {
-  font-family: 'RanchoFuente';
-  /* Nombre de la fuente */
-  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
-  /* Ruta relativa al archivo TTF */
-  /* Otros formatos de archivo si los tienes */
-  font-weight: normal;
-  /* Puedes ajustar esto según la fuente */
-  font-style: normal;
-  /* Puedes ajustar esto según la fuente */
-}
-
 footer {
     background-color: #387423;
     color: white;
     padding: 20px 50px;
-    font-family: 'RanchoFuente', cursive;
     font-size: 20px;
   }
   

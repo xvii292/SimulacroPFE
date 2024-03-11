@@ -27,17 +27,18 @@ const CarruselImagenes = () => {
   ];
 
   const settings = {
-    dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // Habilita la reproducción automática
-    autoplaySpeed: 5000, // Establece la velocidad de cambio a 5 segundos (5000 milisegundos)
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
 
   return (
     <Zoom>
+      <div className="custom-arrows">
       <Slider {...settings}>
         {imagenes.map((imagen, index) => (
           <div key={index}>
@@ -51,6 +52,7 @@ const CarruselImagenes = () => {
           </div>
         ))}
       </Slider>
+      </div>
     </Zoom>
   );
 };

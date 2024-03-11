@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'RanchoFuente';
-  /* Nombre de la fuente */
-  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
-  /* Ruta relativa al archivo TTF */
-  /* Otros formatos de archivo si los tienes */
-  font-weight: normal;
-  /* Puedes ajustar esto según la fuente */
-  font-style: normal;
-  /* Puedes ajustar esto según la fuente */
-}
-
-
 :root {
   --currencyPrefix: "€";
   --negro: #1d1d1d;
@@ -142,10 +129,10 @@ li {
 }
 
 .card .wrapper .infoProd .nombreProd {
-  font-family: "RanchoFuente";
   margin-bottom: 10px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 1px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -169,16 +156,15 @@ li {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 5px;
-  margin-top: 15px; /* o el espaciado que prefieras */
+  margin-top: 15px;
+  margin-bottom: 4%;
 }
 
 .nutricionalItem {
-  font-weight: 400; /* para negritas en los números */
   color: var(--negro);
 }
 
 .nutricionalLabel {
-  font-weight: 400; /* para un peso normal en las etiquetas */
   color: var(--negro);
   display: block; /* para que las etiquetas vayan debajo de los números */
   font-size: 0.8em; /* ajusta al tamaño que prefieras */
@@ -198,10 +184,8 @@ li {
 }
 
 .card .wrapper .infoProd .actions .preciosGrupo .precio {
-  font-family: "RanchoFuente";
   color: var(--negro);
   font-size: 25px;
-  font-weight: 600;
   text-align: left;
 }
 

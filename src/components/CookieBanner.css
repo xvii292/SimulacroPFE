@@ -26,14 +26,14 @@
   .cookie-banner a {
     color: #000000;
     text-decoration: underline;
+    margin-right: 9%;
   }
   
   .cookie-banner button {
+    transform: scale(0.9);
     padding: 10px 20px;
-    font-size: 1em;
     background-color: #387423;
     color: #ffffff;
-    margin-left: 10%;
     border: none;
   }
   
@@ -46,3 +46,15 @@
     color: #387423;
     transition: color 0.3s ease;
  }
+
+ .reject-button {
+  background-color: #ff0000; /* Color de fondo rojo para indicar rechazo */
+  color: #ffffff; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.reject-button:hover {
+  background-color: #cc0000; /* Cambio de color al pasar el cursor sobre el botón */
+}

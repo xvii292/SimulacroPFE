@@ -8,21 +8,28 @@
   color: white;
 }
 
+.centered-container {
+  margin-top: 5%;
+  margin-bottom: -10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .instalacionesTit {
+  border-bottom: 2px solid #387423;
+  width: 70%;
   color: #387423;
   font-size: 68px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  font-family: 'RanchoFuente';
   text-align: center;
 }
 
-.ProductosTit{
+.ProductosTit {
+  border-bottom: 2px solid #387423;
+  width: 70%;
   color: #387423;
   font-size: 68px;
   font-weight: bold;
-  font-family: 'RanchoFuente';
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: -10%;
 }
