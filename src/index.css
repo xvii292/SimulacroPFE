@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'RanchoFuente';
   /* Nombre de la fuente */
-  
+  src: url('Fonts/Rancho-Regular.ttf') format('truetype');
   /* Ruta relativa al archivo TTF */
   /* Otros formatos de archivo si los tienes */
   font-weight: normal;

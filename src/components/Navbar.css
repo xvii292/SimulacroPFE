@@ -1,15 +1,4 @@
 /* Estilos para la barra de navegación (navbar) */
-@font-face {
-  font-family: 'RanchoFuente';
-  /* Nombre de la fuente */
-  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
-  /* Ruta relativa al archivo TTF */
-  /* Otros formatos de archivo si los tienes */
-  font-weight: normal;
-  /* Puedes ajustar esto según la fuente */
-  font-style: normal;
-  /* Puedes ajustar esto según la fuente */
-}
 
 
 .navbar {
@@ -96,11 +85,11 @@
   /* Cambia el color del subrayado al pasar el mouse */
 }
 
-.footer-logo {
-  width: 150px;
-  margin-top: 30px;
-  margin-left: 100px;
-}
+  .footer-logo {
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
 
   .carrito-imagen {
     width: 70px;  /* Ajusta el tamaño según tus necesidades */
@@ -108,6 +97,7 @@
     margin-left: 10px; /* Ajusta el margen según tus necesidades */
     cursor: pointer;  /* Cambia el cursor al pasar el ratón para indicar que es interactivo */
     margin-top: 10px;
+
   }
 .carrito-imagen {
   width: 100px;
@@ -119,3 +109,6 @@
   /* Cambia el cursor al pasar el ratón para indicar que es interactivo */
   margin-top: 10px;
 }
+
+  
+
