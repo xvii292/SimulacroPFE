@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Instalaciones necesarias para el funcionamiento del proyecto:
+
+npm install react-reveal --force  -> Carrusel de fotos
+
+npm install react-spinners --force -> Preloader
+
+
