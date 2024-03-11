@@ -17,19 +17,10 @@
   align-items: center;
 }
 
-.instalacionesTit {
+.instalacionesTit, .ProductosTit, .ServiciosTit {
   border-bottom: 2px solid #387423;
   width: 70%;
   color: #387423;
   font-size: 68px;
-  text-align: center;
-}
-
-.ProductosTit {
-  border-bottom: 2px solid #387423;
-  width: 70%;
-  color: #387423;
-  font-size: 68px;
-  font-weight: bold;
   text-align: center;
 }

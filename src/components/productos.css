@@ -39,6 +39,7 @@ li {
 }
 
 .contenedorCards {
+  transform: scale(1.3);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

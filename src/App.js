@@ -8,6 +8,7 @@ import Productos from './components/productos';
 import CookieBanner from './components/CookieBanner';
 import PasosVenta from './components/PasosVenta';
 import CarruselImagenes from './components/CarruselImagenes';
+import Services from './components/Services';
 
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
               <CookieBanner />
             </header>
             <main>
+              <div class="centered-container">
+                <h2 className="ServiciosTit">Servicios</h2>
+              </div>
+              <Services/>
               <div class="centered-container">
                 <h2 className="ProductosTit">Productos</h2>
               </div>
