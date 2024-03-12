@@ -39,15 +39,15 @@ li {
 }
 
 .contenedorCards {
+  transform: scale(0.8);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
-  padding: 20px 0;
   box-sizing: border-box;
+  margin-top: -4%;
 }
 
 .card {
@@ -317,6 +317,7 @@ li {
   letter-spacing: 1.5px;
   border-radius: 10px;
   background-color: #a5cc43;
+  width: 100%;
   font-weight: 600;
   color: #ffffff;
   padding: 10px;

@@ -8,6 +8,8 @@ import Productos from './components/productos';
 import CookieBanner from './components/CookieBanner';
 import PasosVenta from './components/PasosVenta';
 import CarruselImagenes from './components/CarruselImagenes';
+import Services from './components/Services';
+import Form from './components/Formulario';
 
 
 function App() {
@@ -44,14 +46,23 @@ function App() {
             </header>
             <main>
               <div class="centered-container">
+                <h2 className="ServiciosTit">Servicios</h2>
+              </div>
+              <Services/>
+              <div class="centered-container">
                 <h2 className="ProductosTit">Productos</h2>
               </div>
               <Productos />
               <PasosVenta />
               <div class="centered-container">
-                <h2 className="instalacionesTit">Nuestras Instalaciones</h2>
+                <h2 className="instalacionesTit">Sobre nosotros</h2>
               </div>
               <CarruselImagenes />
+
+              <div class="centered-container">
+                <h2 className="FormTit">Contacta con nosotros</h2>
+              </div>
+              <Form/>
 
             </main>
 
