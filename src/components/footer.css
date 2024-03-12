@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'RanchoFuente';
   /* Nombre de la fuente */
-  src: url('../Fonts/Rancho-Regular.ttf') format('truetype');
+  src: url('../fonts/Rancho-Regular.ttf') format('truetype');
   /* Ruta relativa al archivo TTF */
   /* Otros formatos de archivo si los tienes */
   font-weight: normal;
@@ -15,7 +15,6 @@ footer {
     background-color: #387423;
     color: white;
     padding: 20px 50px;
-    font-family: 'RanchoFuente', cursive;
     font-size: 20px;
     margin-top: 200px;
   }
@@ -26,7 +25,18 @@ footer {
     align-items: flex-start;
     
   }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
+  .footer-section img {
+    max-width: 250px;
+    margin-left: -3%;
+  }
+
   .footer-section h4 {
     margin: 0 0 10px 0;
     font-size: 22px;
@@ -36,6 +46,10 @@ footer {
   .footer-section ul {
     list-style: none;
     padding: 0;
+  }
+
+  .footer-section a {
+    color: white;
   }
   
   .footer-section ul li {

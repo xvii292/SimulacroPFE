@@ -1,0 +1,60 @@
+.cookie-banner {
+    border-top: #000000;
+    position: fixed;
+    z-index: 99;
+    bottom: -100px; /* Inicia fuera de la pantalla */
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 207, 87);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 1.5s ease; /* Transición suave */
+  }
+  
+  .cookie-banner.show {
+    bottom: 0; 
+  }
+  
+  .cookie-banner p {
+    position: static;
+    text-align: center;
+    margin-bottom: -4%;
+    font-size: 40px;
+  }
+  
+  .cookie-banner a {
+    color: #000000;
+    text-decoration: underline;
+    margin-right: 9%;
+  }
+  
+  .cookie-banner button {
+    transform: scale(0.9);
+    padding: 10px 20px;
+    background-color: #387423;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .cookie-banner button:hover {
+     background-color: #ffffff;
+     color: #387423;
+  }
+
+  .cookie-banner a:hover {
+    color: #387423;
+    transition: color 0.3s ease;
+ }
+
+ .reject-button {
+  background-color: #ff0000; /* Color de fondo rojo para indicar rechazo */
+  color: #ffffff; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.reject-button:hover {
+  background-color: #cc0000; /* Cambio de color al pasar el cursor sobre el botón */
+}
