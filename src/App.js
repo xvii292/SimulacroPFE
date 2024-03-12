@@ -54,7 +54,7 @@ function App() {
               <Productos />
               <PasosVenta />
               <div class="centered-container">
-                <h2 className="instalacionesTit">Nuestras Instalaciones</h2>
+                <h2 className="instalacionesTit">Sobre nosotros</h2>
               </div>
               <CarruselImagenes />
 

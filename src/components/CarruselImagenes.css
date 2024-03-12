@@ -66,6 +66,7 @@
 
 .custom-arrows .slick-prev, .custom-arrows .slick-next {
   margin-top: -3%;
+  z-index: 99;
 }
 
 .custom-arrows .slick-prev {
