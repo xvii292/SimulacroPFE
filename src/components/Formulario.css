@@ -1,84 +1,63 @@
-
 .cuadro {
-    margin-top: 10%;
-    margin-bottom: 10%;
+  transform: scale(0.8);
+  margin-bottom: 10%;
+  padding: 20px;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
-  .titulo{
-    margin-left: 42%;
-    color: #387423;
-    margin-bottom: 5px;
-  }
-
-  #linea {
-    width: 50%;
-  }
-  
-  .formulario {
-    padding: 20px;
-    background-color: #cae97b;
-  }
-  .cuadro_formulario {
-    padding: 10px;
-    margin:20px;
-    margin-left: 35%;
-    font-size: 1vw;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 20px;
-  }
-  
-  input,
-  textarea {
-    width: 46%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border-radius: 5%;
-    border: 2px solid black;
-    background-color: #ffffff;
-  }
-  
-  .boton_contenedor {
-    margin-left: 21%;
-  }
-  
-  .boton {
-    color: white;
-    border: none;
-    border-radius: 4px;
-    align-items: center;
-    width: auto;
-    max-width: 20%;
-    height: auto;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #387423;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'RanchoFuente', cursive;
-    border-radius: 30px;
-    margin-top: 6%;
-  }
-  
-  .boton:hover  {
-    background-color: #4CAF50; /* Cambia el color del botón al pasar el mouse */
+.formulario {
+  padding: 20px;
+  background-color: #cae97b;
+  border-radius: 10px;
 }
+
+.cuadro_formulario {
+  padding: 10px;
+  margin: 20px;
+  font-size: 1vw;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
   
-  .piePagina{
-    width: 100%;
-    z-index: 100;
-  
-  }
-  
-  
-  .contact-info{
-    font-size: 1.2vw;
-  }
-  
-  .social-links{
-    font-size: 1.2vw;
-  
-  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 46%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5%;
+  border: 2px solid black;
+  background-color: #ffffff;
+}
+
+.boton {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #387423;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'RanchoFuente', cursive;
+  border-radius: 30px;
+  margin-top: 6%;
+}
+
+.boton:hover {
+  background-color: #4CAF50;
+}

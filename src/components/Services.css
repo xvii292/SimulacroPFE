@@ -1,9 +1,9 @@
 .services-container {
+  transform: scale(0.8);
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 0 auto;/* Centra los servicios si no ocupan todo el ancho */
-  margin-top: 12%;
+  margin: 0 auto;
 }
 
 .service {

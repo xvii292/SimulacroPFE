@@ -78,4 +78,4 @@ npm install react-slick slick-carousel --force -> para el carrusel
 
 npm install react-spinners --force -> Preloader
 
-
+npm install @emailjs/browser --force -> formulario
