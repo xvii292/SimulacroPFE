@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas */
     gap: 30px; /* Espacio entre las imágenes */
     padding: 90px;
+    margin-top: 55px;
   }
   
   .step {
@@ -15,21 +16,39 @@
   
   .step img {
     position: relative;
-    max-width: 60%; /* Hace que la imagen sea responsiva */
-    padding: 10%;
+    max-width: 55%; /* Hace que la imagen sea responsiva */
+    padding: 8%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #imgTransporte {
+    position: relative;
+    max-width: 70%; /* Hace que la imagen sea responsiva */
+    padding: 1%;
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Centra la imagen horizontalmente */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
 
   .Tit{
-    font-size: 65px;
+    font-size: 61px;
     font-weight: 800;
     letter-spacing: 2px;
+    text-shadow: 
+    2px 2px 2px rgba(0, 0, 0, 0.2),   
+    4px 4px 4px rgba(0, 0, 0, 0.3),  
+    6px 6px 6px rgba(0, 0, 0, 0.1); 
+
   }
   
   .step p {
-    margin-top: 5%;
+    margin-top: 3%;
+    text-shadow: 
+    2px 2px 2px rgba(0, 0, 0, 0.1),   
+    4px 4px 4px rgba(0, 0, 0, 0.1),  
+    6px 6px 6px rgba(0, 0, 0, 0); 
   }
   
   .step::before {

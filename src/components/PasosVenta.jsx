@@ -14,7 +14,7 @@ const PasosVenta = () => {
             </div>
             <div className="step">
                 <p className='Tit'>Envío</p>
-                <img src={transporte} alt="Paso de Envío" />
+                <img id='imgTransporte' src={transporte} alt="Paso de Envío" />
                 <p>Tu producto será enviado a tu casa.</p>
             </div>
             <div className="step">
