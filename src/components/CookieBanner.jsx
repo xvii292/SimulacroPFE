@@ -4,6 +4,7 @@ import txt from '../assets/politica_de_cookies.txt';
 
 const CookieBanner = () => {
   const [acceptedCookies, setAcceptedCookies] = useState(false);
+  const [rejectedCookies, setRejectedCookies] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
 
   const acceptCookies = () => {
@@ -12,6 +13,7 @@ const CookieBanner = () => {
   };
 
   const rejectCookies = () => {
+    setRejectedCookies(true);
     // Aquí puedes agregar la lógica para rechazar las cookies
     // Por ejemplo, podrías establecer un estado o limpiar las preferencias de cookies guardadas
   };
@@ -31,6 +33,10 @@ const CookieBanner = () => {
   };
 
   if (acceptedCookies) {
+    return null; // No mostrar el banner si las cookies han sido aceptadas
+  }
+
+  if (rejectedCookies) {
     return null; // No mostrar el banner si las cookies han sido aceptadas
   }
 
