@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.instalacionesTit, .ProductosTit, .ServiciosTit, .FormTit {
+.instalacionesTit, .ProductosTit, .ServiciosTit {
   border-bottom: 2px solid #387423;
   width: 70%;
   color: #387423;

@@ -9,7 +9,7 @@ import CookieBanner from './components/CookieBanner';
 import PasosVenta from './components/PasosVenta';
 import CarruselImagenes from './components/CarruselImagenes';
 import Services from './components/Services';
-import Form from './components/Formulario';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -58,12 +58,7 @@ function App() {
                 <h2 className="instalacionesTit">Sobre nosotros</h2>
               </div>
               <CarruselImagenes />
-
-              <div class="centered-container">
-                <h2 className="FormTit">Contacta con nosotros</h2>
-              </div>
-              <Form/>
-
+              <Contact/>
             </main>
 
             <PiedePagina />
