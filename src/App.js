@@ -38,6 +38,7 @@ import CookieBanner from './components/CookieBanner';
 import PasosVenta from './components/PasosVenta';
 import CarruselImagenes from './components/CarruselImagenes';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -83,10 +84,10 @@ function App() {
               <Productos />
               <PasosVenta />
               <div class="centered-container">
-                <h2 className="instalacionesTit">Nuestras Instalaciones</h2>
+                <h2 className="instalacionesTit">Sobre nosotros</h2>
               </div>
               <CarruselImagenes />
-
+              <Contact/>
             </main>
 >>>>>>> c20dd5f7f207c108711ddbf8a9186379209567e5
 

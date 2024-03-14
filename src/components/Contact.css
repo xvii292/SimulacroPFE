@@ -1,0 +1,164 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Espaciado adicional alrededor de todo el contenedor */
+    padding: 20px; /* Aumento del espaciado interno, afectando arriba y abajo */
+    margin-top: 100px;
+    margin-bottom: 10%;
+  }
+  
+  .contact-image {
+    width: 50%;
+    background: url("../assets/imagenformulario3.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Filtro oscuro */
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .overlay p{
+    color: white;
+  }
+  
+  .contact-form {
+    width: 50%;
+    padding: 2rem;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #464242;
+    border-radius: 4px;
+    font-family: inherit; 
+    font-size: 18px;
+  }
+
+  .contact-form input:focus::placeholder,
+  .contact-form textarea:focus::placeholder {
+      font-size: 22px; /* Tamaño de fuente aumentado */
+      color:rgba(0, 0, 0, 0.6); /* Cambio de color del placeholder */
+  }
+  
+
+  
+  .contact-form label {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .contact-form label input[type="checkbox"] {
+    
+    margin-right: 0.5rem;
+  }
+  
+  .contact-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #407424;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease; /* Agregar transiciones */
+    width: 100px;
+    margin: 0 auto; 
+}
+
+.contact-form button:hover {
+    background-color: #504c4c; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+    transform: scale(1.2); 
+    
+}
+
+
+
+  
+  .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #464242;
+    border-radius: 4px;
+    font-family: inherit; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    resize: vertical; 
+  }
+
+  .modal {
+    display: block; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: auto;
+    
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 800px; 
+    position: relative;
+    font-size: 10px;
+    border-radius: 18px; 
+    
+  }
+  .modal-content p {
+    margin-bottom: 10px; /* Ajusta el valor según el espacio que desees entre los párrafos */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #titulo {
+    font-size: 40px; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  

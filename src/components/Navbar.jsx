@@ -45,8 +45,8 @@ const Navbar = () => {
       <img src={imagenCarrito} className="carrito-imagen" alt="Carrito" />
 
       <div className="horizontal-bar"></div>
-      
     </div>
+    
   );
 };
 

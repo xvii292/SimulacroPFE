@@ -74,6 +74,12 @@ Instalaciones necesarias para el funcionamiento del proyecto:
 
 npm install react-reveal --force  -> Carrusel de fotos
 
+npm install react-slick slick-carousel --force -> para el carrusel
+
 npm install react-spinners --force -> Preloader
 
+npm install @emailjs/browser --force -> formulario
 
+npm i universal-cookie --force -> cookie
+
+npm install react-icons --force -> form icons

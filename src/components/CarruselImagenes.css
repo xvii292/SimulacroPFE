@@ -128,13 +128,23 @@ text-align: center;
 
 
 .imagen-container {
+  transform: scale(0.8);
   position: relative;
+<<<<<<< HEAD
   width: 100%;
   max-width: 1400px;
 
   height: 400px;
   overflow: hidden;
   margin: 0 auto;
+=======
+  width: 80%;
+  max-width: 100%;
+  max-height: 10%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 5%;
+>>>>>>> main
 }
 
 .arrow-container.left {
@@ -168,9 +178,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ajusta la imagen para cubrir completamente el contenedor manteniendo la proporción */
   border-radius: 8px;
-  /* Agrega un borde redondeado a las imágenes si lo deseas */
 }
 
 .descripcion-container {
@@ -187,7 +195,6 @@ text-align: center;
   border-bottom-right-radius: 8px;
 }
 
-
 .descripcion-container h2 {
   font-size: 40px;
   color: #000000;
@@ -199,9 +206,7 @@ text-align: center;
   font-size: 26px;
   color: #000000;
   text-align: center;
-
 }
-
 
 .descripcion-carrusel {
   color: #000000;
@@ -210,32 +215,34 @@ text-align: center;
   margin-top: 10px;
 }
 
-.carrusel-container {
-  margin-top: 440px !important;
-}
-
-.custom-arrows .slick-prev:before,
-.custom-arrows .slick-next:before {
-  color: black;
-}
-
-.custom-arrows .slick-prev, .custom-arrows .slick-next {
-  margin-top: -3%;
-}
-
-.custom-arrows .slick-prev {
-  left: 10%;
+.arrow {
+  position: absolute;
+  top: 40%;
+  background-color: #bfdd72;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transform: scale(2);
+  color: #000000;
+  font-size: 18px;
 }
 
-.custom-arrows .slick-next {
+.arrow.next {
   right: 10%;
-  cursor: pointer;
-  transform: scale(2);
+  z-index: 40;
 }
 
+<<<<<<< HEAD
 .custom-arrows{
   margin-top: 12%;
 }
 
+=======
+.arrow.prev {
+  left: 10%;
+  z-index: 40;
+}
+>>>>>>> main
