@@ -58,3 +58,62 @@
 .reject-button:hover {
   background-color: #cc0000; /* Cambio de color al pasar el cursor sobre el botón */
 }
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#titulo-modal {
+  color: black;
+  font-size: 40px; 
+  text-align: center;
+}
+
+.modal-content {
+  overflow: auto;
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 800px; 
+  position: relative;
+  font-size: 10px;
+  border-radius: 18px; 
+  letter-spacing: 1px;
+}
+.modal-content p {
+  color: #504e4e;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.modal-content h3 {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.modal-content h4 {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.Btn-cerrar{
+  transform:scale(1.5) !important;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
