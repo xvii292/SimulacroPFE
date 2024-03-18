@@ -2,38 +2,52 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './CarruselImagenes.css';
 import { Zoom } from 'react-reveal';
-import Imagen1 from '../assets/invernadero.jpg';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import './CarruselImagenes.css';
+
+import Imagen1 from '../assets/vieja.jpg';
 import almacen from '../assets/almacen.jpg';
-import Imagen3 from '../assets/oficina.jpg';
+import Imagen3 from '../assets/prueba.jpg';
 
+const NextArrow = ({ onClick }) => (
+  <div className="arrow next" onClick={onClick}>
+    <FaChevronRight />
+  </div>
+);
 
+const PrevArrow = ({ onClick }) => (
+  <div className="arrow prev" onClick={onClick}>
+    <FaChevronLeft />
+  </div>
+);
+
+const imagenes = [
+  {
+    url: Imagen1,
+    descripcion: 'En los años 60, Eduardo Gómez, un ingeniero agrónomo, fundó "Hydroponics Manzanares" en una localidad de Ciudad Real(Manzanares). Logró combinar la agricultura con la emergente tecnología hidropónica, comenzando con experimentos en un pequeño invernadero.',
+  },
+  {
+    url: almacen,
+    descripcion: 'Con el respaldo de inversores, Hydroponics Manzanares expandió sus instalaciones, adoptando tecnologías avanzadas como riego automatizado y soluciones nutricionales personalizadas. Destacaron por un sistema único de reciclaje de agua, minimizando desperdicios.',
+  },
+  {
+    url: Imagen3,
+    descripcion: 'Hoy, la empresa es líder mundial en hidroponía, colaborando con agricultores y restaurantes. Su compromiso con la sostenibilidad se refleja en prácticas ecoamigables, estableciendo a "Hydroponics Manzanares" como referente en la innovación y excelencia en el cultivo hidropónico.',
+  },
+];
 
 const CarruselImagenes = () => {
-  const imagenes = [
-    {
-      url: Imagen1,
-      descripcion: 'Nuestros invernaderos son una infraestructura clave que crea un ambiente controlado y eficiente para el crecimiento de plantas sin suelo. En un entorno donde factores como la temperatura, la humedad y la luz son rigurosamente regulados, nuestras instalaciones permiten maximizar el rendimiento y la calidad de los cultivos.  ',
-    },
-    {
-      url: almacen,
-      descripcion: 'Nuestro Almacén es un espacio estratégicamente organizado y equipado para atender las necesidades específicas de nuestros clientes. Este lugar desempeña un papel crucial en el suministro de insumos .',
-    },
-    {
-      url: Imagen3,
-      descripcion: 'Nuestras oficinas son un reflejo de la cultura vibrante y la innovación que define a nuestra empresa. Ubicadas en Manzanares, nuestras instalaciones han sido diseñadas para fomentar la creatividad, la colaboración y el bienestar de nuestros empleados.',
-    },
-  ];
-
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // Habilita la reproducción automática
-    autoplaySpeed: 5000, // Establece la velocidad de cambio a 5 segundos (5000 milisegundos)
+    autoplay: true,
+    autoplaySpeed: 5000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
@@ -44,7 +58,6 @@ const CarruselImagenes = () => {
             <div className="imagen-container">
               <img className="imagen-carrusel" src={imagen.url} alt={`Imagen ${index + 1}`} />
               <div className="descripcion-container">
-
                 <p className="descripcion-carrusel">{imagen.descripcion}</p>
               </div>
             </div>
@@ -56,5 +69,7 @@ const CarruselImagenes = () => {
 };
 
 export default CarruselImagenes;
+
+
 
 

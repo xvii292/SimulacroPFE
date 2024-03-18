@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'RanchoFuente';
   /* Nombre de la fuente */
-  
+  src: url(fonts/Rancho-Regular.ttf);
   /* Ruta relativa al archivo TTF */
   /* Otros formatos de archivo si los tienes */
   font-weight: normal;
@@ -11,7 +11,26 @@
 }
 
 body {
+  overflow: auto;
   margin: 0;
+}
+
+/* Estilos para la barra de desplazamiento en la página */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #cae97b; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #387423; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el cursor sobre él */
 }
 
 code {
