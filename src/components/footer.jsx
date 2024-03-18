@@ -3,20 +3,13 @@ import logoEmp from "../assets/logov1.png";
 import logoInsta from "../assets/instagram.png";
 import logoFace from "../assets/facebook.png";
 import logoX from "../assets/x.png";
-import txt from '../assets/politica_de_cookies.txt';
 import './footer.css';
 
-const openTxtInNewWindow = () => {
-  fetch({txt})
-    .then(response => response.text())
-    .then(text => {
-      const newWindow = window.open();
-      newWindow.document.write(`<pre>${text}</pre>`);
-    })
-    .catch(error => console.error('Error al cargar el archivo de texto:', error));
-};
-
 const Pie = () => {
+
+  const abrirPoliticaCookies = () => {
+    window.open('./Cookies.html', '_blank');
+  };
   return (
     <footer>
       <div class="footer-container">
@@ -31,7 +24,7 @@ const Pie = () => {
             <li>Consultoría de cultivo</li>
             <li>Aviso legal</li>
             <li>Política de Privacidad</li>
-            <a href={txt} target="_blank" rel="noreferrer" onClick={openTxtInNewWindow}>Política de Cookies</a>
+            <li onClick={abrirPoliticaCookies} style={{cursor: "pointer"}}>Política de Cookies</li>
 
           </ul>
         </div>
