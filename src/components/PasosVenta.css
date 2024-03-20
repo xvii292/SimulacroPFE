@@ -1,115 +1,123 @@
 .shipping-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas */
-    gap: 30px; /* Espacio entre las imágenes */
-    padding: 90px;
-    margin-top: 55px;
-  }
-  
-  .step {
-    position: relative;
-    text-align: center;
-    background-color: #cae97b; /* Gris más oscuro para cada paso */
-    padding: 40px;
-    border-radius: 20%; /* Forma circular detrás de cada paso */
-  }
-  
-  .step img {
-    position: relative;
-    max-width: 55%; /* Hace que la imagen sea responsiva */
-    padding: 8%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Centra la imagen horizontalmente */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-  }
-
-  #imgTransporte {
-    position: relative;
-    max-width: 70%; /* Hace que la imagen sea responsiva */
-    padding: 1%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Centra la imagen horizontalmente */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-  }
-
-  .Tit{
-    font-size: 61px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-shadow: 
-    2px 2px 2px rgba(0, 0, 0, 0.2),   
-    4px 4px 4px rgba(0, 0, 0, 0.3),  
-    6px 6px 6px rgba(0, 0, 0, 0.1); 
-
-  }
-  
-  .step p {
-    margin-top: 3%;
-    text-shadow: 
-    2px 2px 2px rgba(0, 0, 0, 0.1),   
-    4px 4px 4px rgba(0, 0, 0, 0.1),  
-    6px 6px 6px rgba(0, 0, 0, 0); 
-  }
-  
-  .step::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 0;
-    height: 0;
-    background-color: #a5cc43;
-    border-radius: 60%;
-    transition: width 0.8s, height 0.8s;
-  }
-  
-  .step:hover::before {
-      width: calc(70%);
-      height: calc(50%);
-  }
-  
-  .shipping-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas */
-    gap: 30px;
-    padding: 90px;
-    margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Grid de 3 columnas */
+  gap: 30px;
+  /* Espacio entre las imágenes */
+  padding: 90px;
+  margin-top: 55px;
 }
 
-  @media screen and (max-width: 768px) {
-    .shipping-steps {
-        grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas */
-        padding: 50px;
-        gap: 20px;
-    }
+.step {
+  position: relative;
+  text-align: center;
+  background-color: #cae97b;
+  /* Gris más oscuro para cada paso */
+  padding: 40px;
+  border-radius: 20%;
+  /* Forma circular detrás de cada paso */
+}
 
-    .Tit{
-        font-size: 48px; /* Ajustamos el tamaño del texto */
-    }
+.step img {
+  position: relative;
+  max-width: 55%;
+  /* Hace que la imagen sea responsiva */
+  padding: 8%;
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+  /* Centra la imagen horizontalmente */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
+}
 
-    .step img {
-        max-width: 60%; /* Ajustamos el tamaño de las imágenes */
-    }
+.Tit {
+  font-size: 61px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow:
+    2px 2px 2px rgba(0, 0, 0, 0.2),
+    4px 4px 4px rgba(0, 0, 0, 0.3),
+    6px 6px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.step p {
+  margin-top: 3%;
+  text-shadow:
+    2px 2px 2px rgba(0, 0, 0, 0.1),
+    4px 4px 4px rgba(0, 0, 0, 0.1),
+    6px 6px 6px rgba(0, 0, 0, 0);
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 0;
+  height: 0;
+  background-color: #a5cc43;
+  border-radius: 60%;
+  transition: width 0.8s, height 0.8s;
+}
+
+.step:hover::before {
+  width: calc(70%);
+  height: calc(50%);
+}
+
+.shipping-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Grid de 3 columnas */
+  gap: 30px;
+  padding: 90px;
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .shipping-steps {
+    grid-template-columns: 1fr;
+    transform: scale(0.7);
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .Tit {
+    font-size: 48px;
+    /* Ajustamos el tamaño del texto */
+  }
+
+  .step img {
+    max-width: 60%;
+    /* Ajustamos el tamaño de las imágenes */
+  }
 }
 
 /* Media query para móviles (pantallas hasta 480px) */
 @media screen and (max-width: 480px) {
-    .shipping-steps {
-        grid-template-columns: 1fr; /* Cambiamos a 1 columna */
-        padding: 20px;
-        gap: 15px;
-    }
+  .shipping-steps {
+    grid-template-columns: 1fr;
+    transform: scale(0.7);
+    padding: 20px;
+    margin-top: -70%;
+    margin-bottom: -30%;
+    gap: 15px;
+  }
 
-    .Tit{
-        font-size: 34px; /* Ajustamos el tamaño del texto para móviles */
-    }
+  .Tit {
+    font-size: 34px;
+    /* Ajustamos el tamaño del texto para móviles */
+  }
 
-    .step img {
-        max-width: 75%; /* Hacemos las imágenes un poco más grandes para que llenen el espacio */
-    }
+  .step img {
+    max-width: 75%;
+    /* Hacemos las imágenes un poco más grandes para que llenen el espacio */
+  }
 
-    .step {
-        padding: 20px;
-    }
+  .step {
+    padding: 20px;
+  }
 }

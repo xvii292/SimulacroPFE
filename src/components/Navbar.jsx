@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${navbarVisible ? '' : 'hide'}`}>
       <div className="contenedor">
-        <img src={logoEmp} alt="Logo" className="footer-logo"/>
+        <img src={logoEmp} alt="Logo" className="nav-logo"/>
       </div>
 
       <div className={`menu-icon ${menuVisible ? 'open' : ''}`} onClick={toggleMenu}>
