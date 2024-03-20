@@ -6,7 +6,7 @@ import './Portada.css';
 
 const Portada = () => {
   return (
-    <div className="portada">
+    <div className="portada" id="inicio">
       <img src={imagenPortada} className="portada-imagen" alt="Portada" />
       <div className="contenido">
         <h1>HydroPonic Manzanares</h1>

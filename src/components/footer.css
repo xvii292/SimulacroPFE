@@ -129,3 +129,26 @@ footer {
   margin: 5% auto; /* Margen superior e inferior del 2% y centrado horizontal */
   display: block; /* Convertir el botón en un bloque para ocupar todo el ancho disponible */
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid white; /* Añade una línea divisoria blanca en la parte inferior de cada sección */
+    padding-bottom: 20px; /* Ajusta el padding para espaciar el contenido de la línea divisoria */
+  }
+
+  .footer-section:last-child {
+    border-bottom: none; /* Elimina la línea divisoria de la última sección para evitar una línea extra en el fondo */
+  }
+  
+  .social-media-links a img {
+    width: 40px;
+  }
+}

@@ -51,25 +51,23 @@ const CarruselImagenes = () => {
   };
 
   return (
-    <Zoom>
-      <Slider {...settings}>
-        {imagenes.map((imagen, index) => (
-          <div key={index}>
-            <div className="imagen-container">
-              <img className="imagen-carrusel" src={imagen.url} alt={`Imagen ${index + 1}`} />
-              <div className="descripcion-container">
-                <p className="descripcion-carrusel">{imagen.descripcion}</p>
+    <div id="carrusel" style={{ scrollMarginTop: '100px' }}>
+      <Zoom>
+        <Slider {...settings}>
+          {imagenes.map((imagen, index) => (
+            <div key={index}>
+              <div className="imagen-container">
+                <img className="imagen-carrusel" src={imagen.url} alt={`Imagen ${index + 1}`} />
+                <div className="descripcion-container">
+                  <p className="descripcion-carrusel">{imagen.descripcion}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </Zoom>
+          ))}
+        </Slider>
+      </Zoom>
+    </div>
   );
 };
 
 export default CarruselImagenes;
-
-
-
-

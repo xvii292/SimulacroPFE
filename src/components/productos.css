@@ -74,6 +74,7 @@ li {
 
 .card .wrapper:hover .imgProd {
   height: 350px;
+  
 }
 
 .card .wrapper .colorProd {
@@ -97,8 +98,8 @@ li {
   transition: ease all 0.3s;
 }
 
-.Lechuga {
-  background-image: url("../assets/ejemplo_producto.png");
+.Chalota {
+  background-image: url("../assets/chalota.png");
 }
 
 .Tomate {
@@ -109,8 +110,8 @@ li {
   background-image: url("../assets/naranjas.png");
 }
 
-.Platano {
-  background-image: url("../assets/platano.png");
+.Aguacate {
+  background-image: url("../assets/aguacate.png");
 }
 
 
@@ -162,6 +163,7 @@ li {
 
 .nutricionalItem {
   color: var(--negro);
+  margin-top: 1px;
 }
 
 .nutricionalLabel {
@@ -311,7 +313,7 @@ li {
   }
 }
 
-.comprarya input[type='button'] {
+.comprarya button {
   font-family: 'RanchoFuente';
   font-size: 15px;
   letter-spacing: 1.5px;
@@ -323,4 +325,5 @@ li {
   padding: 10px;
   border: none; /* Elimina el borde del botón */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin-top: -6%;
 }

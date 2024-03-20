@@ -161,4 +161,22 @@
     margin-bottom: 20px;
   }
   
+
+  @media (max-width: 768px) { /* Ajusta el 768px según tus necesidades */
+    .contact-image {
+      display: none; /* Esto oculta el .contact-image en dispositivos móviles */
+    }
+    
+    .contact-container {
+      flex-direction: column; /* Cambia la dirección del flex si es necesario */
+      margin: 0; /* Elimina el margen exterior si es necesario */
+      padding: 0; /* Ajusta el padding si es necesario */
+    }
+  
+    .contact-form {
+      width: calc(100% - 50px); /* Ajusta el ancho para permitir el margen */
+      margin: 0 10px; /* Esto añade 10px de margen a cada lado */
+      padding: 1rem; /* Ajusta el padding interno según sea necesario */
+    }
+  }
   

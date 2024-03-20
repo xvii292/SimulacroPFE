@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+// Asegúrate de tener las imágenes importadas correctamente
 import consultoriaImg from '../assets/consultoria.jpeg';
 import sistemasImg from '../assets/sistemas.jpeg';
 import monitoreoImg from '../assets/monitoreo.jpeg';
@@ -23,7 +24,6 @@ const Service = ({ name, description, imageUrl, color }) => {
       </div>
       <div className="service-text">
         <h2 className="service-title">{name}</h2>
-        {/* La descripción ahora es condicional basada en isHovered */}
         {isHovered && <p className="service-description">{description}</p>}
       </div>
     </div>
@@ -32,7 +32,7 @@ const Service = ({ name, description, imageUrl, color }) => {
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <section className="services-container" id="servicios" style={{ scrollMarginTop: '100px' }}>
       <Service 
         name="Consultoría en Hidroponía" 
         description="Asesoría personalizada para el diseño y manejo de sistemas hidropónicos, incluyendo selección de cultivos y soluciones nutritivas."
@@ -57,7 +57,7 @@ const Services = () => {
         imageUrl={suministroImg}
         color="#EE964B" 
       />
-    </div>
+    </section>
   );
 };
 

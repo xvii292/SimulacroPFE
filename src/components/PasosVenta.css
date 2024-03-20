@@ -69,3 +69,47 @@
       height: calc(50%);
   }
   
+  .shipping-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas */
+    gap: 30px;
+    padding: 90px;
+    margin-top: 55px;
+}
+
+  @media screen and (max-width: 768px) {
+    .shipping-steps {
+        grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas */
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .Tit{
+        font-size: 48px; /* Ajustamos el tamaño del texto */
+    }
+
+    .step img {
+        max-width: 60%; /* Ajustamos el tamaño de las imágenes */
+    }
+}
+
+/* Media query para móviles (pantallas hasta 480px) */
+@media screen and (max-width: 480px) {
+    .shipping-steps {
+        grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .Tit{
+        font-size: 34px; /* Ajustamos el tamaño del texto para móviles */
+    }
+
+    .step img {
+        max-width: 75%; /* Hacemos las imágenes un poco más grandes para que llenen el espacio */
+    }
+
+    .step {
+        padding: 20px;
+    }
+}

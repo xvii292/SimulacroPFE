@@ -13,10 +13,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contacto" style={{ scrollMarginTop: '100px' }}>
       <div className="contact-image">
         <div className="overlay">
-          <p>"¡Tu opinión es valiosa para nosotros!"</p>
+          <p>"Tu opinión es valiosa para nosotros"</p>
         </div>
       </div>
       <div className="contact-form">

@@ -16,10 +16,38 @@
   align-items: center;
 }
 
-.instalacionesTit, .ProductosTit, .ServiciosTit {
+.instalacionesTit, .ProductosTit, .ServiciosTit, .contactTit {
   border-bottom: 2px solid #387423;
   width: 70%;
   color: #387423;
   font-size: 68px;
   text-align: center;
+}
+
+@media (max-width: 430px) {
+  .ProductosTit, .ServiciosTit {
+    margin-bottom: -120px;
+  }
+
+  .centered-container {
+    margin-top: 0%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }

@@ -75,3 +75,54 @@
   left: 10%;
   z-index: 40;
 }
+
+/* Estilos base para CarruselImagenes */
+.imagen-container {
+  transform: scale(0.8);
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  max-height: 10%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+/* Ajustes para los textos y flechas aquí... */
+
+/* Media query para tablets (pantallas hasta 768px) */
+@media screen and (max-width: 768px) {
+  .descripcion-container p {
+    font-size: 20px; /* Reducimos el tamaño del texto para adaptarse a tablets */
+  }
+
+  .arrow {
+    width: 35px; /* Ajustamos el tamaño de las flechas */
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+/* Media query para móviles (pantallas hasta 480px) */
+@media screen and (max-width: 480px) {
+  .imagen-container {
+    width: 95%; /* Ajustamos el ancho del contenedor de imágenes para llenar más espacio */
+    margin-bottom: 2%; /* Reducimos el margen inferior */
+  }
+
+  .descripcion-container {
+    height: auto; /* Hacemos que la altura se ajuste al contenido */
+    padding: 8px; /* Ajustamos el padding */
+  }
+
+  .descripcion-container p {
+    font-size: 18px; /* Reducimos aún más el tamaño del texto para móviles */
+  }
+
+  .arrow {
+    width: 30px; /* Reducimos el tamaño de las flechas para móviles */
+    height: 30px;
+    font-size: 14px;
+  }
+}
+

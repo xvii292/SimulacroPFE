@@ -7,22 +7,26 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  margin-top: -25px;
+  margin-top: -20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-
-
+  height: 90px;
+  transition: top 0.5s;
 }
+
+.navbar.hide {
+  top: -145px; /* Ajusta según la altura del navbar */
+}
+
 
 .navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  margin-right: 50px;
-  margin-top: 10px;
+  margin-right: 120px;
+  margin-top: 17px;
 }
 
 .navbar li {
@@ -37,7 +41,7 @@
 /* Estilos para los enlaces en la barra de navegación */
 .navbar ul li a {
   text-decoration: none;
-  font-size: 42px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0 10px;
   font-family: 'RanchoFuente', cursive;
@@ -51,10 +55,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 20px; /* Altura del gradiente */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f0f0f0); /* Define el gradiente */
-  pointer-events: none; /* Evita que el gradiente sea interactivo */
+
 }
 
 .navbar ul li a::after {
@@ -83,7 +84,8 @@
 }
 
   .footer-logo {
-    width: 150px;
+    width: 160px !important;
+    height: 120px;
     margin-top: 30px;
     margin-left: 100px;
   }
@@ -103,5 +105,156 @@
   margin-top: 10px;
 }
 
+.menu-icon {
+  display: none; /* Ocultar por defecto */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px; /* Altura del icono de hamburguesa */
+  width: 30px; /* Ancho del icono de hamburguesa */
+}
+
+.menu-icon .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.menu-icon .bar {
+  transition: all 0.3s ease; /* Añade suavidad a la transición */
+}
+
+
+/* Media query para dispositivos con ancho de hasta 768px */
+@media (max-width: 430px) {
+  .navbar ul {
+    display: none;
+  }
   
+  .menu-icon {
+    display: block; /* Asegúrate de que esto se muestre si estaba oculto */
+  }
+
+  .footer-logo {
+    width: 120px !important; /* Tamaño más pequeño para el logo */
+    height: 90px; /* Ajusta esta altura según necesites */
+    margin-top: 15px; /* Reducir el margen superior para alinear con el menú hamburguesa */
+    margin-left: 70px; /* Ajustar el margen izquierdo según la necesidad */
+  }
+
+  .menu-icon {
+    display: block; /* Asegurarse de que el icono de menú se muestre */
+    position: absolute; /* Posicionamiento absoluto respecto al padre */
+    right: 90px; /* Ajustar según necesites para alinear a la derecha */
+    top: 80px; /* Ajustar para alinear verticalmente con el logo */
+    height: 70px !important;
+    width: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .menu-icon {
+    display: block; /* Mostrar solo en dispositivos móviles */
+    height: 40px; /* Aumenta la altura del contenedor del menú de hamburguesa */
+    width: 40px;
+    margin-top: -15px;
+    margin-right: 200px;
+    transform:scale(0.5);
+  }
+
+  .footer-logo {
+    width: 180px !important; /* Tamaño más pequeño para el logo */
+    height: 130px; /* Ajusta esta altura según necesites */
+    margin-top: 25px; /* Reducir el margen superior para alinear con el menú hamburguesa */
+    margin-left: 180px; /* Ajustar el margen izquierdo según la necesidad */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Ajustar según la altura de tu navbar */
+    left: 0;
+    right: 0;
+    background-color: #387423; /* Color de fondo del menú */
+    display: none; /* Inicialmente oculto */
+    margin: 0;
+    padding: 0;
+    z-index: 1000; /* Asegurar que el menú se muestre por encima de otros contenidos */
+    transform: translateY(-100%);
+    transition: transform 0.5s ease; 
+  }
+
+  .navbar ul.open {
+    display: flex; /* Mostrar el menú cuando menuVisible es true */
+    transform: translateY(0);
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Espaciado entre elementos del menú */
+  }
+
+  .navbar ul li a {
+    font-size: 28px; /* Ajustar el tamaño del texto para dispositivos móviles */
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: flex; /* Mostrar solo en dispositivos móviles */
+    height: 50px; /* Aumenta la altura del contenedor del menú de hamburguesa */
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 200px;
+  }
+
+  .footer-logo {
+    width: 180px !important; /* Tamaño más pequeño para el logo */
+    height: 130px; /* Ajusta esta altura según necesites */
+    margin-top: 25px; /* Reducir el margen superior para alinear con el menú hamburguesa */
+    margin-left: 180px; /* Ajustar el margen izquierdo según la necesidad */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Ajustar según la altura de tu navbar */
+    left: 0;
+    right: 0;
+    background-color: #387423; /* Color de fondo del menú */
+    display: none; /* Inicialmente oculto */
+    margin: 0;
+    padding: 0;
+    z-index: 1000; /* Asegurar que el menú se muestre por encima de otros contenidos */
+    transform: translateY(-100%);
+    transition: transform 0.5s ease; 
+  }
+
+  .navbar ul.open {
+    display: flex; /* Mostrar el menú cuando menuVisible es true */
+    transform: translateY(0);
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Espaciado entre elementos del menú */
+  }
+
+  .navbar ul li a {
+    font-size: 28px; /* Ajustar el tamaño del texto para dispositivos móviles */
+  }
+
+}
 

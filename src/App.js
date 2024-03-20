@@ -26,17 +26,14 @@ function App() {
     <div className="App">
       {
         loading ?
+        <div className="loader-container">
           <BounceLoader
             color="#387423"
-            cssOverride={{
-              display: 'flex',
-              marginTop: '20%',
-              marginLeft: '45%'
-            }}
             loading
             size={100}
           />
-          :
+        </div>
+        :
           <div>
             <header className="App-header">
               <Navbar />
@@ -57,6 +54,9 @@ function App() {
                 <h2 className="instalacionesTit">Sobre nosotros</h2>
               </div>
               <CarruselImagenes />
+              <div class="centered-container">
+                <h2 className="contactTit">Contáctanos</h2>
+              </div>
               <Contact/>
             </main>
 
