@@ -82,4 +82,8 @@ npm install @emailjs/browser --force -> formulario
 
 npm i universal-cookie --force -> cookie
 
+<<<<<<< HEAD
 npm install react-icons --force -> form icons
+=======
+npm install react-icons --force -> form icons
+>>>>>>> 2af78ef242592566419927cde9111cff56900367
