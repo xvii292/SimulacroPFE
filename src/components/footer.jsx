@@ -48,9 +48,15 @@ const Pie = () => {
         <div className="footer-section">
           <h4>Redes Sociales</h4>
           <div className="social-media-links">
-            <a href="your_facebook_profile" target="_blank"><img src={logoFace} alt="Facebook" /></a>
-            <a href="your_twitter_profile" target="_blank"><img src={logoX} alt="X" /></a>
-            <a href="your_instagram_profile" target="_blank"><img src={logoInsta} alt="Instagram" /></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src={logoFace} alt="Facebook" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src={logoX} alt="X" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src={logoInsta} alt="Instagram" />
+            </a>
           </div>
         </div>
       </div>
@@ -187,7 +193,7 @@ const Pie = () => {
               Tiene derecho a presentar cualquier reclamación ante la autoridad de control competente, considerando que la misma es, en España, la Agencia Española de Protección de Datos. Para poder ejercitar sus derechos en materia de protección de datos puede contactarnos a través de correo electrónico hidroponicmnz@gmail.com, o dirigir su solicitud mediante escrito dirigido al responsable de tratamiento en Calle Puerto, 2, 13.500 - Manzanares (Ciudad Real).</p>
             <p>Actualizaciones y cambios en la Política de Cookies JF PIMI realizará una revisión de la Política de cookies anualmente, salvo que existan exigencias normativas o de otra índole que hagan necesario adaptar la Política con una periodicidad inferior. Por tanto, se aconseja a los usuarios que consulten periódicamente su contenido, con el objetivo de estar informado adecuadamente sobre cómo y para qué utilizamos las cookies.
               Fecha de la última actualización: Marzo de 2024.</p>
-              <button className="Btn-cerrar" onClick={closeModal}>Cerrar</button>
+            <button className="Btn-cerrar" onClick={closeModal}>Cerrar</button>
           </div>
         </div>
       )}
