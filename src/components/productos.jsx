@@ -11,7 +11,7 @@ const Productos = () => {
   ]);
 
   return (
-    <div className="contenedorCards">
+    <div className="contenedorCards" id="productos">
       {cards.map((card) => (
         <div className='card'>
           <div className="wrapper">

@@ -11,7 +11,7 @@ const Portada = () => {
       <div className="contenido">
         <h1>HydroPonic Manzanares</h1>
         <p>"La salud hecha hojas"</p>
-        <button>Catálogo de productos</button>
+        <button><a className='enlace' href="#productos">Catálogo de productos</a></button>
       </div>
     </div>
   );

@@ -88,26 +88,38 @@
   margin-bottom: 5%;
 }
 
-/* Ajustes para los textos y flechas aquí... */
+@media screen and (max-width: 1024px) {
 
-/* Media query para tablets (pantallas hasta 768px) */
-@media screen and (max-width: 768px) {
-  .descripcion-container p {
-    font-size: 20px; /* Reducimos el tamaño del texto para adaptarse a tablets */
+  #carrusel{
+    margin-top: -5%;
+  }
+
+  .descripcion-container {
+    height: auto; 
+    padding: 8px;
+  }
+
+  .imagen-carrusel{
+    height: 800px;
   }
 
   .arrow {
-    width: 35px; /* Ajustamos el tamaño de las flechas */
-    height: 35px;
-    font-size: 16px;
+    display: none;
   }
 }
 
 /* Media query para móviles (pantallas hasta 480px) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+
+  
   .imagen-container {
-    width: 95%; /* Ajustamos el ancho del contenedor de imágenes para llenar más espacio */
-    margin-bottom: 2%; /* Reducimos el margen inferior */
+    height: auto;
+    width: 95%;
+    margin-bottom: 2%;
+  }
+
+  .imagen-carrusel{
+    height: 500px;
   }
 
   .descripcion-container {
@@ -120,9 +132,7 @@
   }
 
   .arrow {
-    width: 30px; /* Reducimos el tamaño de las flechas para móviles */
-    height: 30px;
-    font-size: 14px;
+    display: none;
   }
 }
 

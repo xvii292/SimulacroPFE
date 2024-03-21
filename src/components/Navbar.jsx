@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > lastScrollY) {
         // Scrolling down
         setNavbarVisible(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${navbarVisible ? '' : 'hide'}`}>
       <div className="contenedor">
-        <img src={logoEmp} alt="Logo" className="nav-logo"/>
+        <img src={logoEmp} alt="Logo" className="nav-logo" />
       </div>
 
       <div className={`menu-icon ${menuVisible ? 'open' : ''}`} onClick={toggleMenu}>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-list ${menuVisible ? 'open' : ''}`}>
-      <li className="nav-item">
+        <li className="nav-item">
           <a className="nav-link" href="#inicio" onClick={toggleMenu}>Inicio</a>
         </li>
         <li className="nav-item">
