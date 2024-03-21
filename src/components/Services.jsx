@@ -1,6 +1,5 @@
 import React from 'react';
 import './Services.css';
-// Asegúrate de tener las imágenes importadas correctamente
 import consultoriaImg from '../assets/consultoria.jpeg';
 import sistemasImg from '../assets/sistemas.jpeg';
 import monitoreoImg from '../assets/monitoreo.jpeg';

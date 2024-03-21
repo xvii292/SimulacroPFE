@@ -33,7 +33,7 @@ const Pie = () => {
             <li>Consultoría Comercial de Venta</li>
             <li>Consultoría de cultivo</li>
             <li>Aviso legal</li>
-            <li>Política de Privacidad</li>
+            <li onClick={openCookiePolicy} style={{ cursor: 'pointer' }}>Política de Privacidad</li>
             <li onClick={openCookiePolicy} style={{ cursor: 'pointer' }}>Política de Cookies</li>
           </ul>
         </div>

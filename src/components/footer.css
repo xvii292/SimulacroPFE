@@ -83,7 +83,6 @@ footer {
 .modal-content {
   overflow: auto;
   background-color: #fefefe;
-  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 100%;
@@ -124,6 +123,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  .modal-content{
+    top: -140% !important;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -158,6 +162,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
+  .modal-content{
+    top: 20% !important;
+  }
 
   .footer-section{
     transform: scale(0.85);

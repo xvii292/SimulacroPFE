@@ -121,7 +121,7 @@
 
   .step:hover::before {
     width: calc(70%);
-    height: calc(55%);
+    height: calc(60%);
   }
 
 

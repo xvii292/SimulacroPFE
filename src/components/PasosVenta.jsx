@@ -1,5 +1,6 @@
 import React from 'react';
 import './PasosVenta.css';
+import { Zoom } from 'react-reveal';
 import recolecta from '../assets/recolecta.png';
 import transporte from '../assets/transporte.png';
 import comer from '../assets/comer.png';
@@ -7,6 +8,7 @@ import comer from '../assets/comer.png';
 const PasosVenta = () => {
     return (
         <section className="shipping-steps">
+            <Zoom>
             <div className="step">
                 <p className='Tit'>Recolecta</p>
                 <img src={recolecta} alt="Paso de Recolecta" />
@@ -22,6 +24,7 @@ const PasosVenta = () => {
                 <img src={comer} alt="Paso de Consumo" />
                 <p>El producto estará listo para el consumo.</p>
             </div>
+            </Zoom>
         </section>
     );
 };

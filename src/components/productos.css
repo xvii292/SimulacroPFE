@@ -39,7 +39,7 @@ li {
 }
 
 .contenedorCards {
-  transform: scale(0.8);
+  transform: scale(0.9);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,6 +241,10 @@ li {
 @media (max-width: 768px) {
   .contenedorCards {
     flex-direction: column;
+  }
+
+  .contenedorCards {
+    transform: scale(0.8);
   }
 
   .card {
