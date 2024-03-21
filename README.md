@@ -83,5 +83,3 @@ npm install @emailjs/browser --force -> formulario
 npm i universal-cookie --force -> cookie
 
 npm install react-icons --force -> form icons
-
-npm install react-router-dom --force -> path
