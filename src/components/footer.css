@@ -124,8 +124,11 @@ footer {
 
 @media (max-width: 768px) {
 
+  .modal{
+    overflow: auto;
+  }
+
   .modal-content{
-    top: -140% !important;
   }
 
   .footer-container {
