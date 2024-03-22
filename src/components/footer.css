@@ -91,6 +91,7 @@ footer {
   font-size: 10px;
   border-radius: 18px;
   letter-spacing: 1px;
+  margin-top: 15%;
 }
 
 .modal-content p {
@@ -129,6 +130,10 @@ footer {
   }
 
   .modal-content{
+    top: -140% !important;
+    transform: scale(0.8);
+    margin: 0;
+    padding: 10px;
   }
 
   .footer-container {
@@ -167,7 +172,10 @@ footer {
 @media (max-width: 1024px) {
 
   .modal-content{
-    top: 20% !important;
+    top: -100% !important;
+    transform: scale(0.8);
+    margin: 0;
+    padding: 10px;
   }
 
   .footer-section{

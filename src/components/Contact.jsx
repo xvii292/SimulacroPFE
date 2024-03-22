@@ -77,7 +77,7 @@ const ContactForm = () => {
       </div>
       {showModal && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content1">
             <span className="close" onClick={closeModal}>&times;</span>
 
             <h2 id="titulo">Términos y Condiciones</h2>
