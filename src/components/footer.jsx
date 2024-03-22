@@ -5,10 +5,11 @@ import logoFace from "../assets/facebook.png";
 import logoX from "../assets/x.png";
 import './footer.css';
 
+import { Link } from 'react-router-dom';
+
+
 const Pie = () => {
-  const openCookiePolicy = () => {
-    window.open('./cookies.html', '_blank');
-  };
+
 
   return (
     <footer>
@@ -24,7 +25,7 @@ const Pie = () => {
             <li>Consultoría de cultivo</li>
             <li>Aviso legal</li>
             <li>Política de Privacidad</li>
-            <li onClick={openCookiePolicy} style={{cursor: 'pointer'}}>Política de Cookies</li>
+            <li><Link to="/PoliticaDeCookies">Política de Cookies</Link></li>
           </ul>
         </div>
         <div className="footer-section">

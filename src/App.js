@@ -11,6 +11,9 @@ import CarruselImagenes from './components/CarruselImagenes';
 import Services from './components/Services';
 import Contact from './components/Contact';
 
+import { Route } from 'react-router-dom';
+import PoliticaDeCookies from './components/PoliticaDeCookies';
+
 
 function App() {
 
@@ -62,9 +65,13 @@ function App() {
             </main>
 
             <PiedePagina />
+            <Route path="/PoliticaDeCookies" component={PoliticaDeCookies} />
+
           </div >
+          
       }
     </div >
+    
   );
 }
 
