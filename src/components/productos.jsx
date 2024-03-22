@@ -47,7 +47,7 @@ const Productos = () => {
                   {/* Icono de carrito, asegúrate de tener SVG o un componente Icon aquí */}
                 </div>
                 <div className='comprarya'>
-                  <input type='button' value={"COMPRAR YA"}/>
+                  <input type='button' value={"AÑADIR A LA CESTA"}/>
                 </div>
               </div>
             </div>

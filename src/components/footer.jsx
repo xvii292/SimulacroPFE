@@ -6,12 +6,6 @@ import logoX from "../assets/x.png";
 import './footer.css';
 
 const Pie = () => {
-<<<<<<< HEAD
-
-  const abrirPoliticaCookies = () => {
-    window.open('./Cookies.html', '_blank');
-  };
-=======
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -26,7 +20,6 @@ const Pie = () => {
     openModal();
   };
 
->>>>>>> origin
   return (
     <footer>
       <div className="footer-container">
@@ -41,12 +34,7 @@ const Pie = () => {
             <li>Consultoría de cultivo</li>
             <li>Aviso legal</li>
             <li>Política de Privacidad</li>
-<<<<<<< HEAD
-            <li onClick={abrirPoliticaCookies} style={{cursor: "pointer"}}>Política de Cookies</li>
-
-=======
             <li onClick={openCookiePolicy} style={{ cursor: 'pointer' }}>Política de Cookies</li>
->>>>>>> origin
           </ul>
         </div>
         <div className="footer-section">
